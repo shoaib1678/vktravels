@@ -222,4 +222,11 @@ public class CommonDao {
 			return list.size();
 		}
 
+		
+		public void delete(Object object,String sno) {
+			Criteria criteria = sessionFactory.getCurrentSession().createCriteria(object.getClass());
+			  Object objectdata = criteria.add(Restrictions.eq("sno",Integer.parseInt(sno))).uniqueResult();
+			   sessionFactory.getCurrentSession().delete(objectdata);
+		
+		}
 }

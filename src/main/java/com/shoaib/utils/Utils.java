@@ -25,9 +25,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class Utils {
 	
-	public static String staticimages = "C:/temp/";
-	//public static String staticimages = "/opt/tomcat/apache-tomcat-9.0.78/webapps/file/";
-	//public static String staticimages = "/var/lib/tomcat9/deebash_file/";
+	//public static String staticimages = "C:/temp/";
+	public static String staticimages = "/var/lib/tomcat9/webapps/files/";
 	
 	
 	public static String adminkey = "CbddmBz6lmP2766";
@@ -182,6 +181,25 @@ public class Utils {
 				response.put("message", "Something Went Wrong");
 				return response;
 			}
+		}
+		public static boolean deleteImage(String filePath) {
+		    if (filePath == null || filePath.isEmpty()) {
+		        System.out.println("Invalid file path");
+		        return false;
+		    }
+		    File file = new File(Utils.staticimages + filePath);
+		    if (file.exists()) {
+		        boolean isDeleted = file.delete();
+		        if (isDeleted) {
+		            System.out.println("File successfully deleted: " + file.getAbsolutePath());
+		        } else {
+		            System.out.println("Failed to delete file: " + file.getAbsolutePath());
+		        }
+		        return isDeleted;
+		    } else {
+		        System.out.println("File not found: " + file.getAbsolutePath());
+		        return false;
+		    }
 		}
 
 

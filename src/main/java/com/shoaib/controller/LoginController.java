@@ -23,7 +23,7 @@ public class LoginController {
 	public ResponseEntity<Map<String,Object>> checklogin(HttpServletRequest request){
 		Map<String,Object> response = new HashMap<String,Object>();
 		String email = request.getParameter("email");
-		String password = request.getParameter("pasword");
+		String password = request.getParameter("password");
 		response = loginService.checklogin(email,password);
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.OK);
 	}

@@ -1,165 +1,84 @@
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
- 		<!-- App favicon -->
-        <link rel="shortcut icon" href="assets/Inventory/images/favicon.ico">
+	<title>VK Transport</title>
+    <!-- Main Styles -->
+	<link rel="stylesheet" href="assets/styles/style.min.css">
+
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+	<!-- Waves Effect -->
+	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+	
+	
+	
+	<!-- Sweet Alert -->
+	<link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+	<!-- FlexDatalist -->
+	<link rel="stylesheet" href="assets/plugin/flexdatalist/jquery.flexdatalist.min.css">
+	<!-- Popover -->
+	<link rel="stylesheet" href="assets/plugin/popover/jquery.popSelect.min.css">
+
+	<!-- Select2 -->
+	<link rel="stylesheet" href="assets/plugin/select2/css/select2.min.css">
+
+	<!-- Data Tables -->
+	<link href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/af-2.5.3/b-2.3.6/b-html5-2.3.6/b-print-2.3.6/cr-1.6.2/kt-2.8.2/r-2.4.1/sp-2.1.2/datatables.min.css" rel="stylesheet"/>
+	
+	<!-- Percent Circle -->
+	<link rel="stylesheet" href="assets/plugin/percircle/css/percircle.css">
+
+	<!-- Chartist Chart -->
+	<link rel="stylesheet" href="assets/plugin/chart/chartist/chartist.min.css">
+
+	<!-- FullCalendar -->
+	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
+	<link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
+
+	<!-- Color Picker -->
+	<link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+	<link href="assets/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
 		
-		<!-- select2 css -->
- 		<link href="assets/Inventory/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
- 		
- 		<!-- dropzone css -->
-        <link href="assets/Inventory/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
- 		 
- 		 <!-- DataTables -->
-        <link href="assets/Inventory/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/Inventory/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
-        <!-- Responsive datatable examples -->
-        <link href="assets/Inventory/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />     
- 		 	
- 		 <!-- Sweet Alert-->
-        <link href="assets/Inventory/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
- 		 	
-        <!-- Bootstrap Css -->
-        <link rel="stylesheet" type="text/css" href="assets/Inventory/css/bootstrap.min.css" id="bootstrap-style"  />
-        <!-- Icons Css -->
-        <link rel="stylesheet" type="text/css" href="assets/Inventory/css/icons.min.css" />
-        <!-- App Css-->
-        <link rel="stylesheet" type="text/css" href="assets/Inventory/css/app.min.css" id="app-style" />        
-       <style>
-       .font-weight-bold{
-        	font-weight:bolder !important;
-        }
-        .form-label{
-        	font-weight:600 !important;
-        }
-        /* Chrome, Safari, Edge, Opera */
-		input::-webkit-outer-spin-button,
-		input::-webkit-inner-spin-button {
-			-webkit-appearance: none;
-			margin: 0;
-		}
-
-		/* Firefox */
-		input[type=number] {
-			-moz-appearance: textfield;
-		}
-		.float-right{
-			float:right;
-		}			
-		.dataTables_length{
-			display: none;
-		}
-		.dataTables_filter{
-			margin-top: -32px;
-		}		
-		.pagination{			
-  		  margin-top: -25px;
-
-		}
-		.btnwidth{
-			width: 83px;
-		}
-		.img-upload{
-			display:flex;
-			flex-direction:column;
-			justify-content:center;
-			align-items:center;
-			border:1px solid lightgrey;
-			border-radius:5px;"
-		}
-		.upload-pic{
-			z-index:9;
-			max-height:200px;
-		}	
-		.select2{
-			width:100% !important;
-		}	
-		 .lds-roller {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-roller div {
-  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  transform-origin: 40px 40px;
-}
-.lds-roller div:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #fff;
-  margin: -4px 0 0 -4px;
-}
-.lds-roller div:nth-child(1) {
-  animation-delay: -0.036s;
-}
-.lds-roller div:nth-child(1):after {
-  top: 63px;
-  left: 63px;
-}
-.lds-roller div:nth-child(2) {
-  animation-delay: -0.072s;
-}
-.lds-roller div:nth-child(2):after {
-  top: 68px;
-  left: 56px;
-}
-.lds-roller div:nth-child(3) {
-  animation-delay: -0.108s;
-}
-.lds-roller div:nth-child(3):after {
-  top: 71px;
-  left: 48px;
-}
-.lds-roller div:nth-child(4) {
-  animation-delay: -0.144s;
-}
-.lds-roller div:nth-child(4):after {
-  top: 72px;
-  left: 40px;
-}
-.lds-roller div:nth-child(5) {
-  animation-delay: -0.18s;
-}
-.lds-roller div:nth-child(5):after {
-  top: 71px;
-  left: 32px;
-}
-.lds-roller div:nth-child(6) {
-  animation-delay: -0.216s;
-}
-.lds-roller div:nth-child(6):after {
-  top: 68px;
-  left: 24px;
-}
-.lds-roller div:nth-child(7) {
-  animation-delay: -0.252s;
-}
-.lds-roller div:nth-child(7):after {
-  top: 63px;
-  left: 17px;
-}
-.lds-roller div:nth-child(8) {
-  animation-delay: -0.288s;
-}
-.lds-roller div:nth-child(8):after {
-  top: 56px;
-  left: 12px;
-}
-@keyframes lds-roller {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+		<!-- Page Length Extension JavaScript -->
+	<style>
+ 	.dataTables_length{
+		display: none;
+	}
+	.dataTables_filter{
+	margin-top: -40px;
+	}
+	.dataTables_paginate {
+		margin-top: -30px !important;
+	}
+	.button-page-length{
+		background: darkgray;
+    	padding: 6px;
+    	color: white;
+	}
+	.dt-button-collection{
+		width: fit-content !important;
+	}
+	/* .btn-group{
+		display: none;
+	} */
+	#questionTable_filter{
+		display: none;
+	}
+	.buttons-html5{
+		margin-right: 4px;
+    	border-radius: 2px;
+	}
+	.buttons-print{
+		margin-right: 4px;
+    	border-radius: 2px;
+	}
+	ul.sub-menu li:hover {
+    background-color: darkslategrey !important;
 }
 
-.space-between {
-	display: flex;
-	justify-content: space-between;
-}
-        </style>
+	
+	</style>
